@@ -17,6 +17,28 @@ A browser extension (currently only support Firefox) that adds a timezone filter
 - [Stack Overflow](https://stackoverflow.com/jobs) (WIP)
 - [AngelList](https://angel.co/jobs) (TBD)
 
+## Development
+
+### Setup
+
+Install [web-ext](https://github.com/mozilla/web-ext).
+
+```shell
+npm install --global web-ext
+```
+
+### Run
+
+```shell
+web-ext run
+```
+
+### Lint
+
+```shell
+web-ext lint
+```
+
 ## Credit
 
 [Icon](icons/timezone.svg) made by [Freepik](https://www.flaticon.com/authors/freepik) from [flaticon](https://www.flaticon.com/).
