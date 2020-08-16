@@ -1,0 +1,136 @@
+<li class="grid--cell tab ps-relative">
+  <button
+    type="button"
+    class="s-btn s-btn__muted s-btn__outlined s-btn__dropdown s-btn__icon grid ai-center ps-relative"
+    role="button"
+    aria-controls="popover-timezone"
+    data-tab="Timezone"
+  >
+    <div class="grid--cell mr6">
+      <svg
+        aria-hidden="true"
+        class="svg-icon iconDocumentAlt"
+        width="18"
+        height="18"
+        viewBox="0 0 18 18"
+      >
+        <path
+          d="M5 3a2 2 0 00-2 2v10c0 1.1.9 2 2 2h7a2 2 0 002-2V5a2 2 0 00-2-2H5zm2 3a1 1 0 11-2 0 1 1 0 012 0zm-2 4.5c0-.28.22-.5.5-.5h6a.5.5 0 010 1h-6a.5.5 0 01-.5-.5zm.5 1.5h6a.5.5 0 010 1h-6a.5.5 0 010-1zM5 14.5c0-.28.22-.5.5-.5h6a.5.5 0 010 1h-6a.5.5 0 01-.5-.5z"
+        ></path>
+        <path
+          opacity=".4"
+          d="M5.9 2h6.35A2.75 2.75 0 0115 4.75v9.35c.62-.6 1-1.43 1-2.35v-7.5C16 2.45 14.54 1 12.75 1h-4.5c-.92 0-1.75.38-2.35 1z"
+        ></path>
+      </svg>
+    </div>
+    <div class="grid--cell">Timezone</div>
+    <div
+      class="js-filter-indicator d-none fc-white bg-blue-500 ba baw2 bc-white bar-md ps-absolute t4 l4 py1 px4 fs-fine"
+    ></div>
+  </button>
+  <div
+    class="s-popover _timezone ws4 wmx4 t48"
+    style="right: -150px;"
+    id="popover-timezone"
+    role="menu"
+  >
+    <div class="s-popover--arrow__tc"></div>
+    <fieldset
+      data-pane="Timezone"
+      class="grid gs24 gsy fd-column ta-left lh-md _active"
+    >
+      <div class="grid--cell">
+        <div class="grid gs4 gsy fd-column">
+          <label for="ms" class="grid--cell s-label mb4"
+            >Available timezones</label
+          >
+          <div class="grid--cell grid">
+            <div class="s-select">
+              <select
+                class="js-timezone-min"
+                data-initial-value=""
+                id="mt"
+                name="mt"
+                ><option selected="selected" value=""
+                  >Select min. timezone</option
+                >
+                <option value="-12">UTC-12</option>
+                <option value="-11">UTC-11</option>
+                <option value="-10">UTC-10</option>
+                <option value="-9">UTC-9</option>
+                <option value="-8">UTC-8</option>
+                <option value="-7">UTC-7</option>
+                <option value="-6">UTC-6</option>
+                <option value="-5">UTC-5</option>
+                <option value="-4">UTC-4</option>
+                <option value="-3">UTC-3</option>
+                <option value="-2">UTC-2</option>
+                <option value="-1">UTC-1</option>
+                <option value="0">UTC+0</option>
+                <option value="1">UTC+1</option>
+                <option value="2">UTC+2</option>
+                <option value="3">UTC+3</option>
+                <option value="4">UTC+4</option>
+                <option value="5">UTC+5</option>
+                <option value="6">UTC+6</option>
+                <option value="7">UTC+7</option>
+                <option value="8">UTC+8</option>
+                <option value="9">UTC+9</option>
+                <option value="10">UTC+10</option>
+                <option value="11">UTC+11</option>
+                <option value="12">UTC+12</option>
+                <option value="13">UTC+13</option>
+                <option value="14">UTC+14</option>
+              </select>
+            </div>
+            <div class="p8">to</div>
+            <div class="s-select">
+              <select
+                class="js-timezone-max"
+                data-initial-value=""
+                id="mxt"
+                name="mxt"
+                ><option selected="selected" value=""
+                  >Select max. timezone</option
+                >
+                <option value="-12">UTC-12</option>
+                <option value="-11">UTC-11</option>
+                <option value="-10">UTC-10</option>
+                <option value="-9">UTC-9</option>
+                <option value="-8">UTC-8</option>
+                <option value="-7">UTC-7</option>
+                <option value="-6">UTC-6</option>
+                <option value="-5">UTC-5</option>
+                <option value="-4">UTC-4</option>
+                <option value="-3">UTC-3</option>
+                <option value="-2">UTC-2</option>
+                <option value="-1">UTC-1</option>
+                <option value="0">UTC+0</option>
+                <option value="1">UTC+1</option>
+                <option value="2">UTC+2</option>
+                <option value="3">UTC+3</option>
+                <option value="4">UTC+4</option>
+                <option value="5">UTC+5</option>
+                <option value="6">UTC+6</option>
+                <option value="7">UTC+7</option>
+                <option value="8">UTC+8</option>
+                <option value="9">UTC+9</option>
+                <option value="10">UTC+10</option>
+                <option value="11">UTC+11</option>
+                <option value="12">UTC+12</option>
+                <option value="13">UTC+13</option>
+                <option value="14">UTC+14</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </div>
+    </fieldset>
+    <div class="ta-left mt12">
+      <button class="s-btn s-btn__primary js-submit js-trigger" role="button">
+        Apply filters
+      </button>
+      <button class="s-btn js-trigger js-cancel" role="button">Cancel</button>
+    </div>
+  </div>
+</li>

@@ -11,5 +11,14 @@
       "matches": ["*://stackoverflow.com/jobs", "*://stackoverflow.com/jobs?*"],
       "js": ["index.js"]
     }
+  ],
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "web_accessible_resources": ["filter.html"],
+  "permissions": [
+    "*://stackoverflow.com/jobs",
+    "*://stackoverflow.com/jobs?*",
+    "webNavigation"
   ]
 }
