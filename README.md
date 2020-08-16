@@ -10,12 +10,18 @@ Similar feature requests can be seen [here](https://meta.stackoverflow.com/quest
 
 ## How It Works
 
-A browser extension (currently only support Firefox) that adds a timezone filter widget to supported job boards, utilizing the structured or unstructured timezone requirements provided in the job descriptions.
+A browser extension (currently only supports Firefox) that adds timezone filters to supported job boards, utilizing the structured or unstructured timezone requirements provided in the job descriptions.
 
 ## Supported Job Boards
 
 - [Stack Overflow](https://stackoverflow.com/jobs) (WIP)
 - [AngelList](https://angel.co/jobs) (TBD)
+
+## Screenshots
+
+![stackoverflow1](https://raw.githubusercontent.com/frankyjuang/remote-interval/master/screenshots/stackoverflow1.png)
+
+![stackoverflow2](https://raw.githubusercontent.com/frankyjuang/remote-interval/master/screenshots/stackoverflow2.png)
 
 ## Development
 
