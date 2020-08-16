@@ -46,7 +46,7 @@
         (minTimezone !== null && tz + offset < minTimezone) ||
         (maxTimezone !== null && tz - offset > maxTimezone)
       ) {
-        job.style.opacity = 0.4;
+        job.style.opacity = 0.2;
       }
     } else if (rawJob.includes("Preferred Timezone")) {
       console.warn(`Failed to parse preferred timezone of job ${jobId}`);
