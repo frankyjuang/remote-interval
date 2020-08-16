@@ -10,7 +10,9 @@
     const rawFilter = await response.text();
     const parsed = new DOMParser().parseFromString(rawFilter, `text/html`);
     const filter = parsed.querySelector("li");
-    filterContainer.appendChild(filter);
+    // Check again to prevent race condition.
+    filterContainer.querySelector("#popover-timezone") === null &&
+      filterContainer.appendChild(filter);
   }
 
   // Update filter state.
@@ -26,10 +28,12 @@
     filterContainer.querySelector("#mxt").value = maxTimezone;
     count += 1;
   }
-  if (count > 0) {
-    indicator.textContent = count;
-    indicator.classList.remove("d-none");
+  if (count === 0) {
+    return;
   }
+
+  indicator.textContent = count;
+  indicator.classList.remove("d-none");
 
   // Query timezone information and filter.
   const jobs = document.querySelectorAll(".listResults .-job");

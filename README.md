@@ -37,12 +37,20 @@ npm install --global web-ext
 
 ```shell
 web-ext run
+web-ext run --target firefox-desktop
+web-ext run --target chromium
 ```
 
 ### Lint
 
 ```shell
 web-ext lint
+```
+
+### Build
+
+```shell
+web-ext build
 ```
 
 ## Credit
