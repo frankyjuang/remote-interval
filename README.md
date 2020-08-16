@@ -2,6 +2,8 @@
 
 Find remote jobs in your timezone.
 
+![cover1](https://raw.githubusercontent.com/frankyjuang/remote-interval/master/assets/cover1.png)
+
 ## Backstory
 
 It's a huge waste of time to scan through remote job posts and find jobs that are open to your timezone, especially when you're based in East Asia (Taiwan) and looking into US/Europe job markets. There was [Remote Circle](https://www.producthunt.com/posts/remote-circle) solving the exact problem, but sadly after it [became part of](https://twitter.com/remotecircle/status/1259900920512393216) [We Work Remotely](https://weworkremotely.com/), the beloved feature was gone.
@@ -19,9 +21,9 @@ A browser extension (currently only supports Firefox) that adds timezone filters
 
 ## Screenshots
 
-![stackoverflow1](https://raw.githubusercontent.com/frankyjuang/remote-interval/master/screenshots/stackoverflow1.png)
+![stackoverflow1](https://raw.githubusercontent.com/frankyjuang/remote-interval/master/assets/screenshots/stackoverflow1.png)
 
-![stackoverflow2](https://raw.githubusercontent.com/frankyjuang/remote-interval/master/screenshots/stackoverflow2.png)
+![stackoverflow2](https://raw.githubusercontent.com/frankyjuang/remote-interval/master/assets/screenshots/stackoverflow2.png)
 
 ## Development
 
