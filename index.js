@@ -6,10 +6,11 @@
   // Insert filter button.
   const filterContainer = document.querySelector("#job-search-form ul.grid");
   if (filterContainer.querySelector("#popover-timezone") === null) {
-    const placeholder = document.createElement("div");
-    const rawFilter = await fetch(browser.runtime.getURL("filter.html"));
-    filterContainer.appendChild(placeholder);
-    placeholder.outerHTML = await rawFilter.text();
+    const response = await fetch(browser.runtime.getURL("filter.html"));
+    const rawFilter = await response.text();
+    const parsed = new DOMParser().parseFromString(rawFilter, `text/html`);
+    const filter = parsed.querySelector("li");
+    filterContainer.appendChild(filter);
   }
 
   // Update filter state.
@@ -26,7 +27,7 @@
     count += 1;
   }
   if (count > 0) {
-    indicator.innerHTML = count;
+    indicator.textContent = count;
     indicator.classList.remove("d-none");
   }
 
